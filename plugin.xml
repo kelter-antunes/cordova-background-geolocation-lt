@@ -27,7 +27,8 @@
     <js-module src="www/TransistorAuthorizationToken.js" name="TransistorAuthorizationToken"></js-module>
 
     <platform name="ios">
-        <preference name="deployment-target" value="9.0" />
+        <preference name="target-device" value="universal" />
+        <preference name="deployment-target" value="10.0" />
 
         <preference name="BACKGROUND_MODE_LOCATION" default="&lt;string&gt;location&lt;/string&gt;" />
 
