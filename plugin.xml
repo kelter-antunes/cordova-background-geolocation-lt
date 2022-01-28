@@ -27,8 +27,7 @@
     <js-module src="www/TransistorAuthorizationToken.js" name="TransistorAuthorizationToken"></js-module>
 
     <platform name="ios">
-        <preference name="target-device" value="universal" />
-        <preference name="deployment-target" value="10.0" />
+
 
         <preference name="BACKGROUND_MODE_LOCATION" default="&lt;string&gt;location&lt;/string&gt;" />
 
@@ -43,6 +42,11 @@
             <feature name="BackgroundGeolocation">
                 <param name="ios-package" value="CDVBackgroundGeolocation"/>
             </feature>
+        </config-file>
+
+        <config-file parent="/*" target="config.xml">
+            <preference name="deployment-target" value="12.0" />
+            <preference name="target-device" value="universal" />
         </config-file>
 
         <framework src="CocoaLumberjack" type="podspec" spec="~> 3.7.2" />
