@@ -27,6 +27,8 @@
     <js-module src="www/TransistorAuthorizationToken.js" name="TransistorAuthorizationToken"></js-module>
 
     <platform name="ios">
+        <preference name="deployment-target" value="9.0" />
+
         <preference name="BACKGROUND_MODE_LOCATION" default="&lt;string&gt;location&lt;/string&gt;" />
 
         <!-- required background modes:  App registers for location updates -->
@@ -55,6 +57,8 @@
 
      <!-- android -->
     <platform name="android">
+       <!--  <preference name="AndroidXEnabled" value="true" />  -->
+
         <preference name="GOOGLE_API_VERSION" default="18.+" />
         <framework src="com.google.android.gms:play-services-location:$GOOGLE_API_VERSION"/>
         <preference name="APPCOMPAT_VERSION" default="28.+" />
